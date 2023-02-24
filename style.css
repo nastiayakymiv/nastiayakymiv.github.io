@@ -3,11 +3,11 @@ p{
 }
 h1 {
 	text-align: center;
+	background: lightpink;
 }
 h2 {
 	text-align: center;
-	color: darkblue;
-	background: lightblue;
+	background: pink;
 }
 h3 {
 	text-align: center;
