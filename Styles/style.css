@@ -1,7 +1,21 @@
-
+div {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+img {
+	 display: block;
+     width: 100%;
+}
 p{
 	font-size: 25px;
-	
+}
+.me {
+	margin: 20px;
+	font-size: 30px;
 }
 h1 {
 	text-align: center;
@@ -23,7 +37,7 @@ ol {
 .btn {
 	display: inline;
 	width: 300px;
-	height: 40px;
+	height: 80px;
 	border: 1px solid;
 	border-radius: 10px;
 	text-align: center;
@@ -31,7 +45,8 @@ ol {
 	text-decoration: none;
 	color: black;
 	font-size: 20px;
-	margin: 5px 0 10px;
+	margin: 5px 5px 10px;
+	padding: 5px 10px 5px 10px;
 }
 .menu {
 	list-style: none;
