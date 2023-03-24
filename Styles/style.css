@@ -21,7 +21,7 @@ ol {
 	font-size: 25px;
 }
 .btn {
-	display: block;
+	display: inline;
 	width: 300px;
 	height: 40px;
 	border: 1px solid;
