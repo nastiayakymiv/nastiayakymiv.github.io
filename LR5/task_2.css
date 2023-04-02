@@ -1,0 +1,23 @@
+td {
+	border: 1px solid black;
+}
+table {
+	border-collapse: collapse;
+	float: left;
+}
+.marksheet {
+	color: white;
+	text-align: center;
+	background-color: #00FF00;
+	padding: 2px 0 2px 0;
+}
+.subject {
+	padding: 0 25px 0 0;
+}
+td:nth-child(even) {
+	background-color: #98fb98;
+}
+tr:not(:first-child) {
+  background-color: #CCFFCC ;
+}
+	

@@ -1,0 +1,85 @@
+*{
+	 font-family: "Exo 2", sans-serif;
+}
+.tinydiv {
+	display: block;
+	width: 200px; #32cd32  #8ee48e
+	border: 3px solid #8ee48e;
+	box-shadow: 0 5px 2px 0 #32cd32;
+	margin: 0 20px;
+	float: left;
+}
+.smalldiv {
+	display: block;
+	width: 200px;   #ffa500 #ffc459
+	border: 3px solid #ffc459;
+	box-shadow: 0 5px 2px 0 #ffa500;
+	margin: 0 20px;
+	float: left;
+}
+.mediumdiv {
+	display: block;
+	width: 200px; #b22222 #d58585
+	border: 3px solid #d58585;
+    box-shadow: 0 5px 2px 0 #b22222;
+	margin: 0 20px;
+	float: left;
+}
+.tiny {
+	background-color: #8ee48e;
+	box-shadow: 0 5px 2px 0 #32cd32;
+	text-align: center;
+	padding: 10px 0 0px 0;
+	font-size: 20px;
+	color: white;
+	height: 40px;
+}
+.option1 {
+	font-size: 10px;
+	color: grey;
+	padding: 5px 0 5px 0;
+	text-align: center;
+}
+hr {
+	border-top: 1px dashed grey;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+.signup {
+	text-align: center;
+	font-size: 10px;
+	color: white;
+}
+.btn {
+	background-color: #8ee48e;
+	margin: 20px 60px 20px 60px;
+	padding: 10px;
+}
+.small {
+	background-color: #ffc459;
+	box-shadow: 0 5px 2px 0 #ffa500;
+	text-align: center;
+	padding: 10px 0 0px 0;
+	font-size: 20px;
+	color: white;
+	height: 40px;
+}
+.btn1 {
+	background-color: #ffc459;
+	margin: 20px 60px 20px 60px;
+	padding: 10px
+}
+.medium {
+	background-color: #d58585;
+	box-shadow: 0 5px 2px 0 #b22222;
+	text-align: center;
+	padding: 10px 0 0px 0;
+	font-size: 20px;
+	color: white;
+	height: 40px;
+}
+.btn2 {
+	background-color: #d58585;
+	margin: 20px 60px 20px 60px;
+	padding: 10px
+}

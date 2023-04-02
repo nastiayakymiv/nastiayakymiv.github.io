@@ -1,0 +1,20 @@
+table {
+	float: left;
+}
+.company {
+	background-color: skyblue;
+	color: white;
+	text-align: left;
+	width: 150px;
+	padding: 10px 0 10px 8px;
+}
+.quarter {
+	background-color: skyblue;
+	color: white;
+	text-align: center;
+	width: 100px;
+}
+td {
+	background-color:  #d5eef8;
+	text-align: center;
+}
