@@ -1,0 +1,37 @@
+div {
+	width: 600px;
+	border: 2px solid black;
+	margin: auto;
+}
+header {
+	width: 570px;
+	height: 100px;
+	border: 2px solid black;
+	margin: 12px;
+}
+.wrap {
+	width: 570px;
+	height: 524px;
+	border: 2px solid black;
+	margin: 12px;
+}
+main {
+	width: 310px;
+	height: 500px;
+	border: 2px solid black;
+	margin: 12px 8px;
+	float: left;
+}
+.sidebar {
+	width: 220px;
+	height: 500px;
+	border: 2px solid black;
+	margin: 12px 8px;
+	float: left;
+}
+footer {
+	width: 570px;
+	height: 150px;
+	border: 2px solid black;
+	margin: 12px;
+}
