@@ -4,6 +4,9 @@ p {
 	color: #a9a9a9;
 	margin: 50px;
 }
+body {
+	background-color: #F6F6F8;
+}
 .wrap {
 	width: 1200px;
 	height: 700px;
@@ -23,7 +26,7 @@ p {
 	border-radius: 50%;
 	text-align: center;
 	line-height: 40px;
-	background: white;
+	background: #F6F6F8;
 	color: #c7c7c7;
 	font-weight: bold;
 	font-size: 20px;
@@ -109,6 +112,7 @@ img {
 	color: #a9a9a9;
 	text-align: center;
 	font-size: 25px;
+
 }
 .price {
 	color: #808080;
