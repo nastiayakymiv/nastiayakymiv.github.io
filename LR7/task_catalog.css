@@ -1,0 +1,157 @@
+p {
+	text-align: center;
+	font-size: 50px;
+	color: #a9a9a9;
+	margin: 50px;
+}
+.wrap {
+	width: 1200px;
+	height: 700px;
+	margin: 0 auto;
+	border: 2px solid #c7c7c7;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	background-color: #F6F6F8;
+}
+.swipe {
+	position: absolute;
+	top: 50px;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #c7c7c7;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	background: white;
+	color: #c7c7c7;
+	font-weight: bold;
+	font-size: 20px;
+}
+.sticker {
+	position: absolute;
+	top: -40px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.sticker__hit {
+	left: 210px;
+	background-color: #99ebff;
+	border: 2px solid #99ebff;
+}
+.sticker__sale {
+	right: 310px;
+	background-color: #b7f4b7;
+	border: 2px solid #b7f4b7;
+}
+.sticker__new {
+	right: 10px;
+	background-color: #b9a2e8;
+	border: 2px solid #b9a2e8;
+}
+.sticker2 {
+	position: absolute;
+	top: -40px; right: 10px;
+	border: 2px solid #b2f0b2;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	color: white;
+    background-color: #b2f0b2;
+	font-weight: bold;
+	font-size: 20px;
+}
+.swipe__left {
+	left: -20px;
+}
+.swipe__right {
+	right: -20px;
+}
+.item1,
+.item2,
+.item3 {
+	width: 300px;
+	height: 700px;
+	border-right: 2px solid #c7c7c7;	
+}
+.item4{
+	width: 300px;
+	height: 700px;
+}
+.category {
+	text-align: center;
+	height: 70px;
+	font-size: 25px;
+	line-height: 70px;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: #808080;
+}
+hr {
+	margin: 0 15px 0 15px;
+	color: #c7c7c7;
+}
+img {
+	width: 260px;
+	padding: 20px 20px 10px 20px;
+}
+.name {
+	color: #a9a9a9;
+	text-align: center;
+	font-size: 25px;
+}
+.price {
+	color: #808080;
+	text-align: center;
+	font-size: 30px;
+	padding: 20px;
+	height: 30px;
+}
+.price1 {
+	color: #808080;
+	text-align: center;
+	font-size: 30px;
+	padding: 20px 20px 20px 30px;
+	height: 30px;
+	text-decoration: line-through;
+	float: left;
+}
+.btn {
+	width: 150px;
+	height: 50px;
+	border: 2px solid #db7093;
+	border-radius: 20px;
+	text-align: center;
+	background: #db7093;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 auto;
+}
+.btn1 {
+	width: 150px;
+	height: 50px;
+	border: 2px solid #FFC0CB;
+	border-radius: 20px;
+	text-align: center;
+	background: #FFC0CB;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 auto;
+}
+.btn:hover{
+	background: #e085a3;
+}

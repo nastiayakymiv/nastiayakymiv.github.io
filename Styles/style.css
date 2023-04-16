@@ -44,6 +44,10 @@ ol {
 	margin: 5px 5px 10px;
 	padding: 5px 10px 5px 10px;
 }
+a {
+	text-decoration: none;
+	color: #8B0000;
+}
 .menu {
 	list-style: none;
 }
