@@ -8,6 +8,7 @@ body {
 	background-color: #F6F6F8;
 }
 .wrap {
+	position: relative;
 	width: 1200px;
 	height: 700px;
 	margin: 0 auto;
@@ -19,7 +20,7 @@ body {
 }
 .swipe {
 	position: absolute;
-	top: 50px;
+	top: 45px;
 	width: 40px;
 	height: 40px;
 	border: 2px solid #c7c7c7;
@@ -105,37 +106,46 @@ hr {
 	color: #c7c7c7;
 }
 img {
+	position: relative;
 	width: 260px;
-	padding: 20px 20px 10px 20px;
+	padding: 12px 20px 10px 20px;
 }
 .name {
+	position: absolute;
+	top: 490px;
 	color: #a9a9a9;
 	text-align: center;
 	font-size: 25px;
-
+	width: 300px;
 }
 .price {
+	position: absolute;
+	top: 570px;
 	color: #808080;
 	text-align: center;
 	font-size: 30px;
-	padding: 20px;
-	height: 30px;
 }
-.price1 {
-	color: #808080;
-	text-align: center;
-	font-size: 30px;
-	padding: 20px 20px 20px 30px;
-	height: 30px;
+.price2 {
+	left: 415px;
+}
+.price1{
+	left: 110px;
+}
+.price3 {
+	right: 350px;
+}
+.price4 {
+	right: 450px;
 	text-decoration: line-through;
 	float: left;
 }
 .btn {
+	position: absolute;
+	top: 635px;
 	width: 150px;
 	height: 50px;
 	border: 2px solid #db7093;
 	border-radius: 20px;
-	text-align: center;
 	background: #db7093;
 	color: white;
 	font-size: 25px;
@@ -144,18 +154,17 @@ img {
 	margin: 0 auto;
 }
 .btn1 {
-	width: 150px;
-	height: 50px;
+	right: 70px;
 	border: 2px solid #FFC0CB;
 	border-radius: 20px;
-	text-align: center;
 	background: #FFC0CB;
-	color: white;
-	font-size: 25px;
-	text-align: center;
-	line-height: 50px;
-	margin: 0 auto;
 }
-.btn:hover{
-	background: #e085a3;
+.btn2 {
+	left: 70px;
+}
+.btn3 {
+	left: 375px;
+}
+.btn4 {
+	right: 375px;
 }
