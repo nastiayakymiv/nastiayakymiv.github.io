@@ -1,0 +1,193 @@
+/*
+* Background Images - Practice
+* CSS Styles
+*
+*/
+
+
+
+/* General */
+
+
+
+/* Header */
+#topbar{
+	background: black;
+	opacity: 0.4;
+}
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+header {
+	background-image: url("../img/bg-01.jpg");
+	height: 400px;
+	background-position: center;
+}
+h1 {
+  font-family: 'Metal Mania';
+  font-size: 90px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 250px;
+  color: white;
+}
+.menu li {
+	font-family: 'Open Sans';
+  text-transform: uppercase;
+	color: #FFFDEB;
+  display: inline-block;
+  padding: 15px 10px 15px 10px;
+  z-index: 2;
+}
+.menu a {
+	text-decoration: none;
+	color: white;
+}
+.button {
+	color: white;
+  background: linear-gradient(90deg, rgba(222,3,6,1) 23%, rgba(253,50,103,1) 80%);
+	padding: 10px 30px 10px 30px;
+	font-family: 'Open Sans';
+  text-transform: uppercase;
+}
+a.button  {
+	text-decoration: none;
+}
+.button  {
+	margin: 0 auto;
+}
+.button1 {
+	position: relative;
+	left: 380px;
+}
+li:hover {
+	background: #B91B34;
+}
+/* Tour */
+#tour{
+	background: #383838;
+	background-image: url("../img/bg.png");
+	background-position: center;
+	height: 360px;
+}
+h2 {
+	font-family: 'Open Sans';
+  text-transform: uppercase;
+	color: #FFFDEB;
+	font-size: 35px;
+	text-align: center;
+	padding: 20px 0 40px 0;
+}
+.tour-card  {
+	background-position: center;
+	width: 220px;
+	height: 220px;
+	float: left;
+	margin-left: 20px;
+	box-shadow: 0 5px 5px 1px #212121;
+
+}
+.madrid {
+	background-image: url("../img/tour/madrid.jpg");
+}
+.turin {
+	background-image: url("../img/tour/turin.jpg");
+}
+.hamburg {
+	background-image: url("../img/tour/hamburg.jpg");
+}
+.krakow {
+	background-image: url("../img/tour/krakow.jpg");
+}
+.tour-place {
+	font-family: 'Open Sans';
+	color: #FFFDEB;
+	padding: 5px 0 5px 5px;
+}
+.tour-town {
+	font-family: 'Open Sans';
+  text-transform: uppercase;
+	color: #FFFDEB;
+	font-size: 20px;
+	padding: 30px 0 5px 5px;
+}
+.tour-date {
+	font-family: 'Open Sans';
+	color: #FFFDEB;
+	font-style: italic;
+	padding: 5px 0 5px 5px;
+}
+.tour {
+	position: relative;
+	top: 50px; left: 35px;
+}
+/* Gallery */
+#gallery {
+	background: #383838;
+	background-image: url("../img/bg.png");
+	background-position: center;
+	height: 780px;
+}
+img {
+	width: 300px;
+	height: 300px;
+	float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 5px 1px #212121;
+}
+
+/* Subscribe */
+#subscribe {
+	background-image: url("../img/bg-02.jpg");
+	background-position: center;
+	height: 250px;
+}
+.subscribe {
+	font-size: 30px;
+	padding: 40px 0 40px 0;
+}
+.description {
+	font-family: 'Open Sans';
+	color: #FFFDEB;
+	text-align: center;
+}
+input {
+	width: 240px;
+	height: 30px;
+	font-size: 20px;
+	position: relative;
+	top: 15px;
+	left: 285px;
+}
+button {
+	color: white;
+  background: linear-gradient(90deg, rgba(222,3,6,1) 23%, rgba(253,50,103,1) 80%);
+	padding: 5px 20px 5px 20px;
+	font-family: 'Open Sans';
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+  top: 15px; left: 295px;
+  border: none;
+}
+/* Footer */
+footer {
+	background-color: #222222;
+	height: 80px;
+}
+.copyright {
+	font-family: 'Open Sans';
+	color: #FFFDEB;
+	text-align: center;
+	font-size: 10px;
+	line-height: 50px;
+}
+.fa {
+	position: relative;
+	left: 405px;
+	padding: 10px 5px 10px 5px;
+	color: white;
+}
+
