@@ -100,6 +100,7 @@ h2 {
 .krakow {
 	background-image: url("../img/tour/krakow.jpg");
 }
+
 .tour-place {
 	font-family: 'Open Sans';
 	color: #FFFDEB;
@@ -184,7 +185,12 @@ footer {
 	font-size: 10px;
 	line-height: 50px;
 }
-.fa {
+.fa-facebook-official,
+.fa-twitter,
+.fa-youtube,
+.fa-apple,
+.fa-spotify,
+.fa-soundcloud {
 	position: relative;
 	left: 405px;
 	padding: 10px 5px 10px 5px;
