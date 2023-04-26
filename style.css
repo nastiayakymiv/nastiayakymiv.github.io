@@ -1,0 +1,73 @@
+.myphoto {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+img {
+	display: block;
+  width: 100%;
+}
+p{
+	font-size: 25px;
+}
+.me {
+	margin: 20px;
+	font-size: 30px;
+}
+h2 {
+	text-align: center;
+	background: #ffd9e0;
+}
+h3 {
+	text-align: center;
+}
+ul {
+	font-size: 25px;
+}
+ol {
+	font-size: 25px;
+}
+.btn {
+	display: inline;
+	width: 300px;
+	height: 80px;
+	border: 1px solid;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	margin: 5px 5px 10px;
+	padding: 5px 10px 5px 10px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.menu {
+	list-style: none;
+}
+.menu li {
+	display: block;
+}
+h1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+h1:before, h1:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 5px solid;
+  margin: auto;
+}
+h1:before {
+  margin-right: 10px
+}
+h1:after {
+  margin-left: 10px
+}
