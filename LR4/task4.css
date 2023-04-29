@@ -1,52 +1,52 @@
 div {
 	position: relative;
-	height: 50px;
-	width: 150px;
+	height: 100px;
+	width: 300px;
 	border: 3px solid black;
 	margin: 10px 0 20px;
 }
 .battery:before {
 	content: '';
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
 	position: absolute;
 	background: red;
 }
 .battery:after {
 	content: '';
-	height: 20px;
-	width: 8px;
+	height: 30px;
+	width: 10px;
 	position: absolute;
-	left: 150px; bottom: 18px;
+	left: 300px; bottom: 35px;
 	background: black;
 }
 .battery1:before {
 	content: '';
-	height: 50px;
-	width: 100px;
+	height: 100px;
+	width: 200px;
 	position: absolute;
 	background: gold;
 }
 .battery1:after {
 	content: '';
-	height: 20px;
-	width: 8px;
+	height: 30px;
+	width: 10px;
 	position: absolute;
-	left: 150px; bottom: 18px;
+	left: 300px; bottom: 35px;
 	background: black;
 }
 .battery2:before {
 	content: '';
-	height: 50px;
-	width: 150px;
+	height: 100px;
+	width: 300px;
 	position: absolute;
 	background: green;
 }
 .battery2:after {
 	content: '';
-	height: 20px;
-	width: 8px;
+	height: 30px;
+	width: 10px;
 	position: absolute;
-	left: 150px; bottom: 18px;
+	left: 300px; bottom: 35px;
 	background: black;
 }

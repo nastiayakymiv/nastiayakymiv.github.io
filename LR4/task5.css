@@ -1,8 +1,8 @@
 td {
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
   text-align: center;
-  
+  font-size: 40px;
 }
 table {
 	border: 1px solid black;
