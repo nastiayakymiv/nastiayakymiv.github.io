@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Test</title>
+  </head>
+  <body>
+    <h1>Знайти найбільше число</h1>
+    <hr />
+    <label for="num1">Введіть перше число: </label>
+    <input type="number" id="num1" /><br /><br />
+    <label for="num2">Введіть друге число: </label>
+    <input type="number" id="num2" /><br /><br />
+    <button onclick="findLargestNumber();">Знайти найбільше число</button>
+    <p>Найбільше число: <span id="result"></span></p>
+
+    <script>
+      function findLargestNumber() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        if (!isNaN(num1) && !isNaN(num2)) {
+          var largestNumber = Math.max(num1, num2);
+          document.getElementById("result").textContent = largestNumber;
+        } else {
+          alert("Будь ласка, введіть коректні числа.");
+        }
+      }
+    </script>
+  </body>
+</html>

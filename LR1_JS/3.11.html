@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Test</title>
+  </head>
+  <body>
+    <script>
+      var studentNames = [];
+
+      while (true) {
+        var fullName = prompt("Введіть прізвище та ім'я учня:");
+
+        if (fullName === null) {
+          break;
+        }
+
+        studentNames.push(fullName);
+      }
+      if (studentNames.length > 0) {
+        document.write("<h2>Список учнів:</h2>");
+        document.write("<ul>");
+        for (var i = 0; i < studentNames.length; i++) {
+          document.write("<li>" + studentNames[i] + "</li>");
+        }
+        document.write("</ul>");
+      } else {
+        document.write("<p>Список учнів порожній.</p>");
+      }
+    </script>
+  </body>
+</html>

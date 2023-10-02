@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Test</title>
+  </head>
+  <body>
+    <h1>Визначення пори року</h1>
+    <hr />
+    <label for="month">Введіть номер місяця (1-12): </label>
+    <input type="number" id="month" /><br /><br />
+    <button onclick="findSeason();">Визначити пору року</button>
+    <p>Пора року: <span id="result"></span></p>
+    <script>
+      function findSeason() {
+        var month = parseInt(document.getElementById("month").value);
+        if (!isNaN(month) && month >= 1 && month <= 12) {
+          var season = "";
+          if (month >= 3 && month <= 5) {
+            season = "весна";
+          } else if (month >= 6 && month <= 8) {
+            season = "літо";
+          } else if (month >= 9 && month <= 11) {
+            season = "осінь";
+          } else {
+            season = "зима";
+          }
+          document.getElementById("result").textContent = season;
+        } else {
+          alert("Будь ласка, введіть коректний номер місяця (від 1 до 12).");
+        }
+      }
+    </script>
+  </body>
+</html>

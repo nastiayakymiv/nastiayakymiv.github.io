@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Test</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h2>Таблиця множення</h2>");
+      document.write("<table border='1'>");
+      document.write("<tr>");
+      document.write("<th>x</th>");
+      for (var i = 1; i <= 10; i++) {
+        document.write("<th>" + i + "</th>");
+      }
+      document.write("</tr>");
+      for (var j = 1; j <= 10; j++) {
+        document.write("<tr>");
+        document.write("<th>" + j + "</th>");
+
+        for (var k = 1; k <= 10; k++) {
+          var product = j * k;
+          document.write("<td>" + product + "</td>");
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+    </script>
+  </body>
+</html>

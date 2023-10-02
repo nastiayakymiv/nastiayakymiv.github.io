@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Test</title>
+  </head>
+  <body>
+    <script>
+      var numberOfStudents = prompt(
+        "Введіть кількість учнів у студентській групі:"
+      );
+      if (
+        numberOfStudents !== null &&
+        !isNaN(numberOfStudents) &&
+        numberOfStudents > 0
+      ) {
+        var studentNames = [];
+        for (var i = 0; i < numberOfStudents; i++) {
+          var fullName = prompt(
+            "Введіть прізвище та ім'я учня " + (i + 1) + ":"
+          );
+          studentNames.push(fullName);
+        }
+        document.write("<h2>Список учнів:</h2>");
+        document.write("<ul>");
+        for (var j = 0; j < studentNames.length; j++) {
+          document.write("<li>" + studentNames[j] + "</li>");
+        }
+        document.write("</ul>");
+      } else {
+        alert(
+          "Введено некоректне значення. Будь ласка, введіть додатне число більше 0."
+        );
+      }
+    </script>
+  </body>
+</html>

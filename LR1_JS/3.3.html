@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello from JavaScript!</title>
+  </head>
+  <body>
+    <h1>JavaScript Test</h1>
+    <hr />
+    <script>
+      function showDialog() {
+        alert("Please click OK to continue.");
+      }
+      function showMessage() {
+        alert("Hello, world!");
+      }
+    </script>
+    <script>
+      window.onload = showDialog;
+    </script>
+    <button onclick="showMessage();">OK</button>
+  </body>
+</html>
