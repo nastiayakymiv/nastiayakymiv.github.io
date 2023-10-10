@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 23</title>
+  </head>
+  <body>
+    <script>
+      document.write("Завдання №23");
+      function getAverageAge(users) {
+        if (users.length === 0) {
+          return 0;
+        }
+        let sumOfAges = users.reduce((total, user) => total + user.age, 0);
+        let averageAge = sumOfAges / users.length;
+        return averageAge;
+      }
+      let john = { name: "John", age: 25 };
+      let pete = { name: "Pete", age: 30 };
+      let mary = { name: "Mary", age: 29 };
+      let users = [john, pete, mary];
+
+      let averageAge = getAverageAge(users);
+      console.log("Середній вік користувачів:", averageAge);
+      alert(getAverageAge(users));
+    </script>
+  </body>
+</html>

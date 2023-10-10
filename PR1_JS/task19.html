@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 19</title>
+  </head>
+  <body>
+    <script>
+      document.write("Завдання №19");
+      function camelize(str) {
+        return str
+          .split("-")
+          .map((word, index) => {
+            if (index === 0) {
+              return word;
+            } else {
+              return word[0].toUpperCase() + word.slice(1);
+            }
+          })
+          .join("");
+      }
+      let str = "my-short-string";
+      let camelizeStr = camelize(str);
+      console.log(camelizeStr);
+    </script>
+  </body>
+</html>

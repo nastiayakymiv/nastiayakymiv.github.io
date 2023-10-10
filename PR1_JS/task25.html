@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 25</title>
+  </head>
+  <body>
+    <script>
+      document.write("Завдання №25");
+      function sumSalaries(salaries) {
+        let salaryValues = Object.values(salaries);
+        let totalSalary = 0;
+
+        for (let salary of salaryValues) {
+          totalSalary += salary;
+        }
+
+        return totalSalary;
+      }
+
+      let salaries = {
+        Іван: 100,
+        Петро: 300,
+        Марія: 250,
+      };
+
+      let total = sumSalaries(salaries);
+      console.log(total);
+      alert(sumSalaries(salaries));
+    </script>
+  </body>
+</html>

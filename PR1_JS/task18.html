@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 18</title>
+  </head>
+  <body>
+    <script>
+      document.write("Завдання №18");
+      let styles = ["Jazz", "Blues"];
+      console.log(styles);
+      styles.push("Rock-n-Roll");
+      console.log(styles);
+      let middleIndex = Math.floor(styles.length / 2);
+      styles[middleIndex] = "Classics";
+      console.log(styles);
+      let firstElement = styles.shift();
+      console.log("Видалений перший елемент:", firstElement);
+      console.log(styles);
+      styles.unshift("Rap", "Reggae");
+
+      console.log("Оновлений масив styles:", styles);
+    </script>
+  </body>
+</html>
