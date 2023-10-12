@@ -7,7 +7,7 @@
   </head>
   <body>
     <script>
-      document.write("Завдання №23");
+      document.write("<h1>Завдання №23</h1>");
       function getAverageAge(users) {
         if (users.length === 0) {
           return 0;
@@ -20,10 +20,16 @@
       let pete = { name: "Pete", age: 30 };
       let mary = { name: "Mary", age: 29 };
       let users = [john, pete, mary];
-
+      document.write("<p>Користувачі:</p>");
+      document.write("<ul>");
+      for (let i = 0; i < users.length; i++) {
+        document.write(
+          "<li>" + users[i].name + " - " + users[i].age + " років</li>"
+        );
+      }
+      document.write("</ul>");
       let averageAge = getAverageAge(users);
-      console.log("Середній вік користувачів:", averageAge);
-      alert(getAverageAge(users));
+      document.write("Середній вік користувачів: ", getAverageAge(users));
     </script>
   </body>
 </html>

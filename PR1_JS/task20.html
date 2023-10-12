@@ -7,7 +7,7 @@
   </head>
   <body>
     <script>
-      document.write("Завдання №20");
+      document.write("<h1>Завдання №20</h1>");
       function filterRange(arr, a, b) {
         let result = [];
         for (let i = 0; i < arr.length; i++) {
@@ -20,8 +20,8 @@
       }
       let arr = [5, 3, 8, 1];
       let filteredArr = filterRange(arr, 1, 4);
-      alert(filteredArr);
-      alert(arr);
+      document.write("Filtere array: ", filteredArr, "<br>");
+      document.write("Array before filter: ", arr);
     </script>
   </body>
 </html>

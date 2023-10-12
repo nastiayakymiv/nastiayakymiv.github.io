@@ -7,15 +7,15 @@
   </head>
   <body>
     <script>
-      document.write("Завдання №21");
+      document.write("<h1>Завдання №21</h1>");
       function copySorted(arr) {
         let sortedCopy = arr.slice().sort();
         return sortedCopy;
       }
       let arr = ["HTML", "JavaScript", "CSS"];
       let sortedCopy = copySorted(arr);
-      alert(sortedCopy);
-      alert(arr);
+      document.write("Sorted copy of array: ", sortedCopy, "<br>");
+      document.write("Original array: ", arr);
     </script>
   </body>
 </html>

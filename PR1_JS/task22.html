@@ -7,7 +7,7 @@
   </head>
   <body>
     <script>
-      document.write("Завдання №22");
+      document.write("<h1>Завдання №22</h1>");
       function sortByAge(arr) {
         arr.sort((a, b) => a.age - b.age);
       }
@@ -17,10 +17,14 @@
       let arr = [petro, ivan, mariya];
       sortByAge(arr);
 
-      console.log(arr);
-      alert(arr[0].name);
-      alert(arr[1].name);
-      alert(arr[2].name);
+      document.write("<p>Відсортований масив:</p>");
+      document.write("<ul>");
+      for (let i = 0; i < arr.length; i++) {
+        document.write(
+          "<li>" + arr[i].name + " - " + arr[i].age + " років</li>"
+        );
+      }
+      document.write("</ul>");
     </script>
   </body>
 </html>

@@ -7,7 +7,7 @@
   </head>
   <body>
     <script>
-      document.write("Завдання №19");
+      document.write("<h1>Завдання №19</h1>");
       function camelize(str) {
         return str
           .split("-")
@@ -22,7 +22,8 @@
       }
       let str = "my-short-string";
       let camelizeStr = camelize(str);
-      console.log(camelizeStr);
+      document.write(str, "<br>");
+      document.write(camelizeStr);
     </script>
   </body>
 </html>

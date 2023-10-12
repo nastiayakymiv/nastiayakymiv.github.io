@@ -7,7 +7,7 @@
   </head>
   <body>
     <script>
-      document.write("Завдання №24");
+      document.write("<h1>Завдання №24</h1>");
       function groupById(arr) {
         return arr.reduce((result, user) => {
           result[user.id] = user;
@@ -22,7 +22,19 @@
       ];
 
       let groupedById = groupById(users);
-      console.log(groupedById);
+      console.log(users);
+      document.write("<p>Користувачі:</p>");
+      document.write("<ul>");
+      for (let id in groupedById) {
+        document.write(
+          "<li>" +
+            groupedById[id].name +
+            " - " +
+            groupedById[id].age +
+            " років</li>"
+        );
+      }
+      document.write("</ul>");
     </script>
   </body>
 </html>

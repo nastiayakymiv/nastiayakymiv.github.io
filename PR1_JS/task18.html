@@ -7,20 +7,19 @@
   </head>
   <body>
     <script>
-      document.write("Завдання №18");
+      document.write("<h1>Завдання №18</h1> <br>");
       let styles = ["Jazz", "Blues"];
-      console.log(styles);
+      document.write(styles, "<br>");
       styles.push("Rock-n-Roll");
-      console.log(styles);
+      document.write(styles, "<br>");
       let middleIndex = Math.floor(styles.length / 2);
       styles[middleIndex] = "Classics";
-      console.log(styles);
+      document.write(styles, "<br>");
       let firstElement = styles.shift();
       console.log("Видалений перший елемент:", firstElement);
-      console.log(styles);
+      document.write(styles, "<br>");
       styles.unshift("Rap", "Reggae");
-
-      console.log("Оновлений масив styles:", styles);
+      document.write("Оновлений масив styles: ", styles);
     </script>
   </body>
 </html>
