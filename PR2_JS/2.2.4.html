@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2.4</title>
+  </head>
+  <body>
+    <style>
+      #clock {
+        font-size: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <div id="clock"></div>
+    <script>
+      function addLeadingZero(value) {
+        if (value < 10) {
+          return "0" + value;
+        }
+        return value;
+      }
+
+      function updateTime() {
+        var now = new Date();
+        var hours = addLeadingZero(now.getHours());
+        var minutes = addLeadingZero(now.getMinutes());
+        var seconds = addLeadingZero(now.getSeconds());
+        document.getElementById("clock").textContent =
+          hours + ":" + minutes + ":" + seconds;
+        setTimeout(showAlert, 30000);
+      }
+
+      function showAlert() {
+        alert("Час оновлено!");
+        updateTime();
+      }
+
+      updateTime();
+    </script>
+  </body>
+</html>

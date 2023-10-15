@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2.5</title>
+  </head>
+  <body>
+    <div id="clock"></div>
+    <button onclick="updateTime()">Оновити час</button>
+
+    <script>
+      function addLeadingZero(value) {
+        if (value < 10) {
+          return "0" + value;
+        }
+        return value;
+      }
+
+      function displayCurrentTime() {
+        var now = new Date();
+        var hours = addLeadingZero(now.getHours());
+        var minutes = addLeadingZero(now.getMinutes());
+        var seconds = addLeadingZero(now.getSeconds());
+        document.getElementById("clock").textContent =
+          hours + ":" + minutes + ":" + seconds;
+      }
+
+      displayCurrentTime();
+
+      function updateTime() {
+        displayCurrentTime();
+      }
+    </script>
+  </body>
+</html>

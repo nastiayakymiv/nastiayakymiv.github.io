@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2.3</title>
+  </head>
+  <body>
+    <style>
+      #clock {
+        font-size: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <div id="clock"></div>
+    <script>
+      function updateClock() {
+        var now = new Date();
+        var seconds = now.getSeconds();
+        var minutes = now.getMinutes();
+        var hours = now.getHours();
+        var timeString = "";
+
+        if (seconds < 10) {
+          timeString += "0" + seconds;
+        } else {
+          timeString += seconds;
+        }
+
+        if (seconds === 0) {
+          if (minutes < 10) {
+            timeString = "0" + minutes + ":" + timeString;
+          } else {
+            timeString = minutes + ":" + timeString;
+          }
+        }
+
+        if (minutes === 0 && seconds === 0) {
+          if (hours < 10) {
+            timeString = "0" + hours + ":" + timeString;
+          } else {
+            timeString = hours + ":" + timeString;
+          }
+        }
+
+        document.getElementById("clock").textContent = timeString;
+        setTimeout(updateClock, 1000);
+      }
+
+      updateClock();
+    </script>
+  </body>
+</html>
