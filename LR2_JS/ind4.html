@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Task 4</title>
+  </head>
+  <body>
+    <script>
+      function getSecondsToTomorrow() {
+        var now = new Date();
+        var tomorrow = new Date(
+          now.getFullYear(),
+          now.getMonth(),
+          now.getDate() + 1
+        );
+        var timeDiff = tomorrow - now;
+        return Math.round(timeDiff / 1000);
+      }
+      document.write("<h1>Індивідуальне завдання №4</h1> <br>");
+      document.write(
+        `<p>Кількість секунд до завтра: ${getSecondsToTomorrow()}</p>`
+      );
+    </script>
+  </body>
+</html>

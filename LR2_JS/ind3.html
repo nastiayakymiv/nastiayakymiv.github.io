@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Task 3</title>
+  </head>
+  <body>
+    <script>
+      function getLastDayOfMonth(year, month) {
+        var date = new Date(year, month + 1, 0);
+        return date.getDate();
+      }
+
+      var year = 2023;
+      var month = 9;
+      var lastDay = getLastDayOfMonth(year, month);
+
+      document.write("<h1>Індивідуальне завдання №3</h1> <br>");
+      document.write(`<p>Рік: ${year}</p>`);
+      document.write(`<p>Місяць: ${month + 1}</p>`);
+      document.write(`<p>Останній день місяця: ${lastDay}</p>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Task 2</title>
+  </head>
+  <body>
+    <script>
+      function getWeekDay(date) {
+        var days = ["НД", "ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ"];
+        var dayOfWeek = date.getDay();
+        return days[dayOfWeek];
+      }
+
+      var date = new Date();
+      var day = date.getDate();
+      var month = date.getMonth() + 1;
+      var year = date.getFullYear();
+
+      var formattedDate = `${day < 10 ? "0" + day : day}/${
+        month < 10 ? "0" + month : month
+      }/${year}`;
+
+      var result = getWeekDay(date);
+      document.write("<h1>Індивідуальне завдання №2</h1> <br>");
+      document.write(`<p>Поточна дата: ${formattedDate}</p>`);
+      document.write(
+        `<p>Відповідно до дати, сьогодні такий день тижня: ${result}</p>`
+      );
+    </script>
+  </body>
+</html>
