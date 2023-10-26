@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+  </head>
+  <body>
+    <p>
+      Температура за Фаренгейтом:
+      <input id="fahrenheit" oninput="fahrenheitToCelsius()" />
+    </p>
+
+    <p>
+      Температура за Цельсієм:
+      <input id="celsius" oninput="celsiusToFahrenheit()" />
+    </p>
+
+    <script>
+      function fahrenheitToCelsius() {
+        let fahrenheit = document.getElementById("fahrenheit").value;
+        let celsius = (5 / 9) * (fahrenheit - 32);
+        document.getElementById("celsius").value = celsius;
+      }
+
+      function celsiusToFahrenheit() {
+        let celsius = document.getElementById("celsius").value;
+        let fahrenheit = (celsius * 9) / 5 + 32;
+        document.getElementById("fahrenheit").value = fahrenheit;
+      }
+    </script>
+  </body>
+</html>

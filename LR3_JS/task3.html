@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+  </head>
+  <body>
+    <h1>Перевірка таблиці множення</h1>
+
+    <p id="general-score">Загальний рахунок: 0%</p>
+
+    <button onclick="generateQuestion()">Наступне завдання</button>
+
+    <p id="question">Тут буде поставлене завдання</p>
+
+    <form id="options"></form>
+
+    <button onclick="checkAnswer()">Перевірити</button>
+
+    <p id="result"></p>
+
+    <script>
+      let correctAnswers = 0;
+      let totalQuestions = 0;
+      let currentQuestion = {};
+
+      function generateQuestion() {
+        const a = Math.floor(Math.random() * 9) + 1;
+        const b = Math.floor(Math.random() * 9) + 1;
+        currentQuestion = { a, b };
+        document.getElementById("question").innerText = `${a} X ${b} = `;
+        document.getElementById("result").innerText = "";
+        totalQuestions++;
+
+        const optionsForm = document.getElementById("options");
+        optionsForm.innerHTML = "";
+
+        const answer = a * b;
+        const options = generateOptions(answer);
+        for (let i = 0; i < options.length; i++) {
+          const option = options[i];
+          const input = document.createElement("input");
+          input.type = "radio";
+          input.id = `option${i}`;
+          input.name = "answerOptions";
+          input.value = option;
+          optionsForm.appendChild(input);
+          optionsForm.appendChild(document.createTextNode(option));
+          optionsForm.appendChild(document.createElement("br"));
+        }
+      }
+
+      function generateOptions(answer) {
+        const options = [answer];
+        while (options.length < 4) {
+          const randomOption = Math.floor(Math.random() * 81) + 1;
+          if (options.indexOf(randomOption) === -1) {
+            options.push(randomOption);
+          }
+        }
+        return shuffleArray(options);
+      }
+
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      function checkAnswer() {
+        const selectedOption = document.querySelector(
+          'input[name="answerOptions"]:checked'
+        );
+        if (!selectedOption) {
+          document.getElementById("result").innerText =
+            "Будь ласка, оберіть варіант відповіді.";
+          return;
+        }
+
+        const userAnswer = parseInt(selectedOption.value);
+        const actualAnswer = currentQuestion.a * currentQuestion.b;
+
+        if (userAnswer === actualAnswer) {
+          document.getElementById("result").innerText = "Правильно!";
+          correctAnswers++;
+        } else {
+          document.getElementById(
+            "result"
+          ).innerText = `Помилка, правильна відповідь "${actualAnswer}"`;
+        }
+
+        const percentage = (correctAnswers / totalQuestions) * 100;
+        document.getElementById(
+          "general-score"
+        ).innerText = `Загальний рахунок: ${percentage.toFixed(
+          0
+        )}% (${correctAnswers} правильних відповідей з ${totalQuestions})`;
+      }
+
+      // Generate the first question when the page loads
+      generateQuestion();
+    </script>
+  </body>
+</html>

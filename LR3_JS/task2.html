@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <style>
+      .inline {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Перевірка таблиці множення</h1>
+
+    <p id="general-score">Загальний рахунок: 0%</p>
+
+    <button onclick="generateQuestion()">Наступне завдання</button>
+    <br />
+    <p id="question" class="inline">Тут буде поставлене завдання</p>
+
+    <input
+      type="text"
+      id="answer"
+      class="inline"
+      placeholder="Введіть вашу відповідь"
+    />
+
+    <button onclick="checkAnswer()" class="inline">Перевірити</button>
+
+    <p id="result"></p>
+
+    <script>
+      let correctAnswers = 0;
+      let totalQuestions = 0;
+      let currentQuestion = {};
+
+      function generateQuestion() {
+        const a = Math.floor(Math.random() * 9) + 1;
+        const b = Math.floor(Math.random() * 9) + 1;
+        currentQuestion = { a, b };
+        document.getElementById("question").innerText = `${a} X ${b} = `;
+        document.getElementById("result").innerText = "";
+        document.getElementById("answer").value = ""; // Очищення поля вводу
+        totalQuestions++;
+      }
+
+      function checkAnswer() {
+        const userAnswer = document.getElementById("answer").value;
+        const actualAnswer = currentQuestion.a * currentQuestion.b;
+
+        if (parseInt(userAnswer) === actualAnswer) {
+          document.getElementById("result").innerText = "Правильно!";
+          correctAnswers++;
+        } else {
+          document.getElementById(
+            "result"
+          ).innerText = `Помилка, правильна відповідь "${actualAnswer}"`;
+        }
+
+        const percentage = (correctAnswers / totalQuestions) * 100;
+        document.getElementById(
+          "general-score"
+        ).innerText = `Загальний рахунок: ${percentage.toFixed(
+          0
+        )}% (${correctAnswers} правильних відповідей з ${totalQuestions})`;
+      }
+      generateQuestion();
+    </script>
+  </body>
+</html>

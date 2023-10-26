@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Captcha</title>
+    <style>
+      .captcha-digit {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        margin: 2px;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="input">Введіть число</label>
+    <div id="captcha"></div>
+    <br />
+
+    <input type="text" id="input" />
+    <button onclick="checkCaptcha()">Перевірити</button>
+    <p id="result"></p>
+
+    <script>
+      function initCaptcha(numDigits) {
+        var captchaContainer = document.getElementById("captcha");
+        for (var i = 0; i < numDigits; i++) {
+          var digit = Math.floor(Math.random() * 10);
+          var digitDiv = document.createElement("div");
+          digitDiv.classList.add("captcha-digit");
+          digitDiv.textContent = digit;
+          captchaContainer.appendChild(digitDiv);
+        }
+      }
+      function checkCaptcha() {
+        var input = document.getElementById("input").value;
+        var captchaDigits = document
+          .getElementById("captcha")
+          .innerText.replace(/\s/g, "");
+        if (input === captchaDigits) {
+          document.getElementById("result").innerText =
+            "Перевірка пройдена. Ви не робот :)";
+        } else {
+          document.getElementById("result").innerText =
+            "Помилка. Схоже на те що Ви робот :(";
+        }
+      }
+      initCaptcha(4);
+    </script>
+  </body>
+</html>
