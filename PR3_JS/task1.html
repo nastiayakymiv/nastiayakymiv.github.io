@@ -5,5 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
   </head>
-  <body></body>
+  <style>
+    p {
+      width: 500px;
+    }
+  </style>
+  <body>
+    <div id="messages">
+      <div>
+        <h1>Android</h1>
+        <p>
+          Android - (вимов. Андроїд) операціна система і платформа для мобільних
+          телефонів та планшетних комп'ютерів, створена компанією Google на базі
+          ядра Linux. Підтримується альянсом Open Handset Alliance (OHA).
+          <br />
+          <button>Close</button>
+        </p>
+      </div>
+      <div>
+        <h1>Mac OS</h1>
+        <p>
+          Mac OS, від Macintosh Operating System (Мак ОС, Операційна Система
+          Макінтош), є першою комерційною графічною операційною системою,
+          створеною компанією Apple Computer. Перша версія Mac OS вийшла у 1984
+          році разом з першим комп'ютером Macintosh.
+          <br />
+          <button>Close</button>
+        </p>
+      </div>
+      <div>
+        <h1>Windows Phone</h1>
+        <p>
+          Windows Phone (кодова назва "Photon") - велике оновлення Windows
+          Mobile, що вийшло 11 жовтня 2010 року. Дана система є повністю новою,
+          з повністю новим інтерфейсом і вперше - з інтеграцією сервісів
+          Microsoft Xbox Live і Zune. Презентація системи відбулася в рамках
+          захлду Mobile World Congress, що проходить у Барселоні.
+          <br />
+          <button>Close</button>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var buttons = document.querySelectorAll("button");
+        buttons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            var message = this.parentNode;
+            message.style.display = "none";
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
