@@ -2,8 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>LR 4</title>
   </head>
-  <body></body>
+  <body>
+    <div id="tabs">
+      <div class="tab whiteborder">border-radius</div>
+      <div class="tab">transition-duration</div>
+      <div class="tab">transition-property</div>
+      <div class="tabContent">
+        <div>
+          Верхній лівий радіус:
+          <input type="range" id="rtl" min="0" max="100" value="0" oninput="generate()">
+          <input type="text" id="ttl" value="0">
+        </div>
+        <div>
+          Верхній правий радіус:
+          <input type="range" id="rtr" min="0" max="100" value="0" oninput="generate()">
+          <input type="text" id="ttr" value="0">
+        </div>
+        <div>
+          Нижний правий радіус:
+          <input type="range" id="rbr" min="0" max="100" value="0" oninput="generate()">
+          <input type="text" id="tbr" value="0">
+        </div>
+        <div>
+          Нижний лівий радіус:
+          <input type="range" id="rbl" min="0" max="100" value="0" oninput="generate()">
+          <input type="text" id="tbl" value="0">
+        </div>
+        <div class="result">
+          <div id="block"></div>
+        <label for="textarea">Code: </label>
+        <textarea name="borderradius-info" id="output" cols="35" rows="3" disabled></textarea>
+        </div>
+      </div>
+      <div class="tabContent">
+        <div>
+          transition-duration:
+          <input type="text" id="timeduration" oninput="applyTransition()">
+          <select name="selecttime" id="selecttime" onchange="applyTransition()">
+            <option value="ms">Milliseconds</option>
+            <option value="s">Seconds</option>
+          </select>
+        </div>
+        <div>
+          transition-property:
+          <select name="property" id="propertyvalue" onchange="applyTransition()">
+            <option value="">All</option>
+            <option value="background">Background</option>
+            <option value="color">Color</option>
+            <option value="height">Height</option>
+            <option value="width">Width</option>
+            <option value="outline">Outline</option>
+          </select>
+        </div>
+        <div id="block2" onmouseenter="applyTransition()">Hover over me</div>
+        <div class="result2">
+          <label for="textarea">Code: </label>
+          <textarea name="borderradius-info" id="output1" cols="40" rows="3" disabled></textarea>
+        </div>
+      </div>
+      <div class="tabContent">
+        <div>
+          transition-duration:
+          <input type="text" id="timeduration" oninput="applyTransition()">
+          <select name="selecttime" id="selecttime" onchange="applyTransition()">
+            <option value="ms">Milliseconds</option>
+            <option value="s">Seconds</option>
+          </select>
+        </div>
+        <div>
+          transition-property:
+          <select name="property" id="propertyvalue" onchange="applyTransition()">
+            <option value="">All</option>
+            <option value="background">Background</option>
+            <option value="color">Color</option>
+            <option value="height">Height</option>
+            <option value="width">Width</option>
+            <option value="outline">Outline</option>
+          </select>
+        </div>
+        <div id="block2" onmouseenter="applyTransition()">Hover over me</div>
+        <div class="result2">
+          <label for="textarea">Code: </label>
+          <textarea name="borderradius-info" id="output1" cols="40" rows="3" disabled></textarea>
+        </div>
+      </div>
+    </div>
+   
+    <script src="script.js"></script>
+  </body>
 </html>
