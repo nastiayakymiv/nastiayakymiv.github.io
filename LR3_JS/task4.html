@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 4</title>
-  </head>
-  <body>
-    <script></script>
-  </body>
+    <style>
+        body {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        section {
+            display: flex;
+            max-width: 600px;
+            margin: 20px auto;
+            align-items: center;
+        }
+
+        #backButton, #nextButton {
+            flex-basis: 80px;
+            cursor: pointer;
+            margin: 0 40px;
+        }
+
+        .content {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="backButton">Назад</div>
+        <div class="content">
+            <div class="photos-number">
+                Фотографія <span id="currentPhotoNumber"></span> з <span id="allPhotoNumber"></span>
+            </div>
+            <div class="image">
+                <img src="" alt="Фото" id="image">
+            </div>
+            <div class="photo-data">
+                <div id="title" style="font-weight: bold;"></div>
+                <div id="description"></div>
+            </div>
+        </div>
+        <div id="nextButton">Вперед</div>
+    </section>
+    <script>
+        var imagesArray = [
+            {
+                path: 'task4-img/bereza.jpg',
+                title: 'Береза',
+                description: 'Родини березові'
+            },
+            {
+                path: 'task4-img/verba.jpg',
+                title: 'Верба',
+                description: 'Напівкущі родини вербових'
+            },
+            {
+                path: 'task4-img/dub.jpg',
+                title: 'Дуб',
+                description: 'Родини дубових'
+            },
+            {
+                path: 'task4-img/cherry.jpg',
+                title: 'Вишня',
+                description: 'Підродини мигдалеві'
+            },
+            {
+                path: 'task4-img/gorih.jpg',
+                title: 'Горіх',
+                description: 'Родини горіхових'
+            }
+        ]
+
+        
+        function setData() {
+            document.getElementById('image').setAttribute('src', imagesArray[currentIndex].path)
+            document.getElementById('title').innerHTML = imagesArray[currentIndex].title
+            document.getElementById('description').innerHTML = imagesArray[currentIndex].description
+
+            document.getElementById('currentPhotoNumber').innerHTML = currentIndex + 1
+            document.getElementById('allPhotoNumber').innerHTML = imagesArray.length
+        
+            if(currentIndex === 0) {
+                document.getElementById('backButton').innerHTML = ""
+            } else {
+                document.getElementById('backButton').innerHTML = "Назад"
+            }
+
+            if(currentIndex === imagesArray.length - 1) {
+                document.getElementById('nextButton').innerHTML = ""
+            } else {
+                document.getElementById('nextButton').innerHTML = "Вперед"
+            }
+        }
+       
+        var currentIndex = 0;
+        setData(currentIndex)
+
+        document.getElementById('backButton').addEventListener('click', () => {
+                currentIndex--;
+                setData()
+        })
+        document.getElementById('nextButton').addEventListener('click', () => {
+                currentIndex++;
+                setData()
+        })
+    </script>
+</body>
 </html>
