@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PR5 JavaScript</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Oops... Something went wrong :(</h1>
+    <body>
+        <div class="todo-container">
+            <div class="todo-header">ToDo List</div>
+            <div class="sort-buttons">
+                <button class="sort-button" onclick="sortTodos('all')">All</button>
+                <button class="sort-button" onclick="sortTodos('active')">Active</button>
+                <button class="sort-button" onclick="sortTodos('completed')">Completed</button>
+            </div>
+            <ul class="todo-list" id="todoList">
+            </ul>
+            <div class="add-todo">
+                <input type="text" id="newTodo" placeholder="Add a new ToDo" onkeyup="addTodoOnEnter(event)">
+                <button onclick="addTodo()">Add</button>
+            </div>
+        </div>
+    <script src="script.js"></script>
 </body>
 </html>
