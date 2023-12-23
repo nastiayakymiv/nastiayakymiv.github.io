@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+}
